@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ERMTest", "ERMTest.csproj", "{8CC0176A-5515-4135-9FDC-0943D2FE6858}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SignalRClient", "..\SignalRClient\SignalRClient.csproj", "{8DA6BFB9-1208-4C66-9C91-168C35ADA891}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8CC0176A-5515-4135-9FDC-0943D2FE6858} = {8CC0176A-5515-4135-9FDC-0943D2FE6858}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8CC0176A-5515-4135-9FDC-0943D2FE6858}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CC0176A-5515-4135-9FDC-0943D2FE6858}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CC0176A-5515-4135-9FDC-0943D2FE6858}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CC0176A-5515-4135-9FDC-0943D2FE6858}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DA6BFB9-1208-4C66-9C91-168C35ADA891}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DA6BFB9-1208-4C66-9C91-168C35ADA891}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DA6BFB9-1208-4C66-9C91-168C35ADA891}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DA6BFB9-1208-4C66-9C91-168C35ADA891}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F5F0E7A2-ADF7-4D8A-B3CE-102133201B53}
+	EndGlobalSection
+EndGlobal

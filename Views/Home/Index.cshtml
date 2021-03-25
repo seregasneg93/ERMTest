@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model IQueryable<ERMTest.Data.DataPK>
+
+<div>
+    <p>
+        <input type="number" id="delayInput"/>
+        <button onclick="changeDelay()">Change</button>
+    </p>
+    <table id="dataTable">
+        <tr>
+            <th>Ip сервера</th>
+
+            <th>Показатели ОП</th>
+
+            <th>Загруженность ЦП</th>
+
+            <th>Состояние дисков</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+    <tr>
+        <td>@(Context.Connection.LocalIpAddress)</td>
+        <td>@(item.FreeOfMemory+"/"+item.TotalMemory)</td>
+        <td>@item.UsageCPU</td>
+        <td>@(item.FreeDisks+"/"+item.TotalDisks)</td>
+    </tr>
+        }
+    </table>
+
+</div>
+
+@section Scripts{
+<script src="~/js/site.js"></script>
+}
